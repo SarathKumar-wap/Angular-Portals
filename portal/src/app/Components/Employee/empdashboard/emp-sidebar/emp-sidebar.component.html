@@ -1,0 +1,46 @@
+<div class="sidebar" style="width:20%">
+  <ul>
+    <br>
+        
+        <br>
+    <li class="active">
+      <a routerLink="/empdashboard/emp_profile"><i class="fa fa-user"></i>&nbsp; &nbsp;&nbsp;&nbsp; Profile</a>
+    </li><br>
+    <li><a routerLink="/empdashboard/emp_leave"><i class="fa fa-refresh"></i>&nbsp; &nbsp;&nbsp;&nbsp; Leave Data</a>
+
+    </li>
+    <br>
+      <li> <a routerLink="/empdashboard/emp_payroll"><i class="fa fa-credit-card"></i>&nbsp; &nbsp;&nbsp; Payroll data</a>
+      </li>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <li> <a (click)="logout()"><i class="fa fa-sign-out"></i>&nbsp; &nbsp;&nbsp;Logout</a></li><br>
+    <!-- <li> <a routerLink="/home"><i class="fa fa-home"></i>&nbsp; &nbsp;&nbsp;Back to Home Page</a></li> -->
+    <br>
+    <br>
+    <br>
+        <br>
+        <br>
+        <br>
+        <br>
+  </ul>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript">
+    $(document).on('click', 'ul li', function () {
+      $(this).addClass('active').siblings.removeClass('active')
+    })
+  </script>
+</div>

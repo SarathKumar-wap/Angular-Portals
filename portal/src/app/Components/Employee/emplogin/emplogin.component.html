@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="forms-container">
+        <div class="signin-signup">
+            <script src="https://kit.fontawesome.com/aa6248277e.js" crossorigin="anonymous"></script>
+
+            <form #loginform="ngForm" (ngSubmit)="getresult(loginform.value)"  class="sign-in-form">
+                <h2 class="title">Login Here!..</h2>
+                <div class="input-field">    
+                    <!-- <i class=" "></i> -->
+                    <input type="text" name="uname" autocomplete="username" placeholder="Enter your Userid" required="yes" ngModel/>
+                </div>
+                <div class="input-field">
+                    <!-- <i class=" "></i> -->
+                    <input type="password" name="pwd" autocomplete="current-password" placeholder="Enter your Password"
+                        id="id_password" required="yes" ngModel/>
+                    <!-- <i class=" " id="togglePassword" style="cursor: pointer;"></i> -->
+                </div>
+                <button type="submit"  class="btn solid">Sign in</button>
+            </form>            
+        </div>
+    </div>
+    <div class="panels-container">
+        <div class="panel left-panel">
+            <div>
+                <button class="back" routerLink="/home">BACK TO HOME PAGE</button>
+                <div>
+            <div class="content">
+                <h3>Hello, Employee</h3>
+                <p>Here, is your Login Page</p>
+            </div>
+        </div>
+        </div>
+</div>

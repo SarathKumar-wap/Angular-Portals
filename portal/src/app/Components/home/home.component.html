@@ -1,0 +1,32 @@
+<div class="banner">
+    <div class="navbar">
+        <a href="https://www.kaartech.com"><img src="https://images.yourstory.com/cs/images/companies/KaarTechn-1633434771609.jpg?fm=auto&ar=1:1&mode=fill&fill=solid&fill-color=fff"
+            alt="img" class="logo"></a>
+        <ul>
+            <li><a>Home</a></li>
+            <li><a (click)="scroll(about)">About</a></li>
+            <li><a (click)="scroll(contact)">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Welcome to Kaar Technologies</h1>
+        <p>Best SAP Digital Transformation Partner</p>
+        <div>
+            <button type="button" routerLink="/login"><span></span>Customer Portal</button>
+            <button type="button" routerLink="/vendorlogin"><span></span>Vendor Portal</button>
+            <button type="button " routerLink="/emplogin"><span></span>Employee Portal</button>
+
+        </div>
+    </div>
+    <div  #about id="about" class="about">
+        <h2><u>About</u></h2>
+        <br>
+        <p>Kaar Tech is the World's Best Pure-Play SAP Digital Transformation Consulting and Partner <br> driven by 1000+ Specialized SAP Consultants and 5000+ Man-Years of SAP Expertise <br> gained through 2000+ projects for 350+ customers across the globe.</p>
+    </div>
+    <div #contact id="contact" class="contact">
+        <h2><u>Contact Us</u></h2>
+        <h4>India</h4>
+        <p>Level 8,Shymala Towers, No 136,<br>
+        Arcot Road,Chennai - 600 093.</p>
+    </div>
+</div>

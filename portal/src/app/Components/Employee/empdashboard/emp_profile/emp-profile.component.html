@@ -1,0 +1,21 @@
+<div class="w3-container w3-black">
+  <h1>
+     PROFILE DATA
+  </h1>
+  </div>
+  <div class="card">
+    <img src="https://www.pctechnologies.net/images/easyblog_shared/July_2018/7-4-18/totw_network_profile_400.jpg" alt="" style="width:100%">
+    
+    
+    <h1>{{ profileArray["RESULT"]["ENAME"]["_text"]}}</h1>
+    <p class="title">Customer No: {{ profileArray["RESULT"]["PERNR"]["_text"]}}</p>
+    <p>Address:{{ profileArray["RESULT"]["STRAS"]["_text"]}}</p>
+    <p>City:{{ profileArray["RESULT"]["ORT01"]["_text"]}}</p>
+    <p>Country:{{ profileArray["RESULT"]["NATIO"]["_text"]}}</p>
+    <p>Postal Code:{{ profileArray["RESULT"]["PSTLZ"]["_text"]}}</p>
+    <p>Ph No:{{ profileArray["RESULT"]["TELNR"]["_text"]}}</p>
+  
+  
+    <p><button>DOMAIN:{{ profileArray["RESULT"]["ORGEH_TXT"]["_text"]}}</button></p>
+  
+  </div>  

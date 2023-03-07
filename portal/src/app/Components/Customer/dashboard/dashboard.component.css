@@ -1,0 +1,11 @@
+main {
+    /* margin-left: 70px; */
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    height: 100vh;
+    width: 100%;
+    right: 10rem;
+    background: url(https://www.orderhive.com/wp-content/uploads/2020/11/customer-portal1-01.svg) no-repeat center center;
+    background-size: cover;
+}

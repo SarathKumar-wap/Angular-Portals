@@ -1,0 +1,26 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="w3-container w3-black">
+<h1>
+   PROFILE DATA
+</h1>
+</div>
+<!-- <div style="background-image: url('https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616__340.jpg');"> -->
+<div class="card">
+  <img src="https://www.pctechnologies.net/images/easyblog_shared/July_2018/7-4-18/totw_network_profile_400.jpg" alt="" style="width:100%">
+  
+  
+  <h1>{{ profileArray["CUST_PROFILE"]["NAME2"]["_text"]}}</h1>
+  <p class="title">Customer No: {{ profileArray["CUST_PROFILE"]["KUNNR"]["_text"]}}</p>
+  <p>Address:{{ profileArray["CUST_PROFILE"]["STRAS"]["_text"]}}</p>
+  <p>City:{{ profileArray["CUST_PROFILE"]["ORT01"]["_text"]}}</p>
+  <p>Country:{{ profileArray["CUST_PROFILE"]["COUNTRY"]["_text"]}}</p>
+  <p>Postal Code:{{ profileArray["CUST_PROFILE"]["PSTLZ"]["_text"]}}</p>
+  <p>Ph No:{{ profileArray["CUST_PROFILE"]["TELF1"]["_text"]}}</p>
+
+
+  <p><button>REGION:{{ profileArray["CUST_PROFILE"]["REGIO"]["_text"]}}</button></p>
+
+</div> 
+<!-- </div> -->

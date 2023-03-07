@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+    color: rgb(216, 86, 86);
+    margin-top: 10px;
+    font-family: Algerian;
+  }
+
+  .center {
+    position: absolute;
+    background-color: aliceblue;
+   top: 270px;
+    right: 200px;
+    margin: auto;
+    width: 50%;
+    border: 3px solid rgb(24, 13, 124);
+    padding: 10px;
+    text-align: center;
+  }
+ 

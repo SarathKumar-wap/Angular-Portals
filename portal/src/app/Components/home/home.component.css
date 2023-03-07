@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 150vh;
+    /* background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0, 0, 0, 0.75)),url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHa3SkBdyO1ouqNh6nER-Rd2UjOEyoEIFtd-NDknVQ7ivZQRhwisjQSqCSl6b-oGkBFlCxXR9kbyCwQK8gcHaqR2b9iQNI0JlHxyunDLhmZ1RrhiBgxElu2DlEb7uL5eUKqthV8jIZE3u2rkUTcfmABPpS_b2CDCvWN8g5xyA2IWSSBeyonN98NRwBmw/s1920/background.jpg); */
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0, 0, 0, 0.75)),url(https://universalpartnership.org/wp-content/uploads/2013/03/world-hd-background-web-design-artwork-yellow-maps-country.jpg);
+    background-size: cover;
+    /* background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0, 0, 0, 0.75)),url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHa3SkBdyO1ouqNh6nER-Rd2UjOEyoEIFtd-NDknVQ7ivZQRhwisjQSqCSl6b-oGkBFlCxXR9kbyCwQK8gcHaqR2b9iQNI0JlHxyunDLhmZ1RrhiBgxElu2DlEb7uL5eUKqthV8jIZE3u2rkUTcfmABPpS_b2CDCvWN8g5xyA2IWSSBeyonN98NRwBmw/s1920/background.jpg); */
+
+    background-position: center;
+}
+
+.navbar {
+    width: auto;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.logo{
+    width: 70px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(12, 12, 12);
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #ff5d06;
+    position:absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    transform: translate(-0%);
+    text-align: center;
+    color: #fff;
+}
+.content h1 {
+    font-size: 50px;
+    margin-top: 80px;
+}
+
+.content p{
+    margin: 20px ;
+    font-size: 15px;
+
+}
+.contact{
+    color:white;
+    position: absolute;
+    left:80%;
+    top:53rem;
+
+}
+.about{
+    color:white;
+    position:absolute;
+    top:35rem;
+    flex-direction: column;
+    text-align: center;
+    display:flex;
+    align-items: center ;
+     justify-content: center;
+    width: 100%;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px dotted #ff5d06;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background:#ff5d06;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}

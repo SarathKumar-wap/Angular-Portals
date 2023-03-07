@@ -1,0 +1,29 @@
+<div class="sidebar" style="width:20%">
+    <ul>
+      <li class="active">
+        <br>
+        
+
+        <a routerLink="/vendordashboard/vend_detail"><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Profile</a>
+      </li>
+      <br><li><a routerLink="/vendordashboard/vend_req_quo"><i class="fa fa-question-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;Request Quotation</a></li>
+      <br><li><a routerLink="/vendordashboard/vend_purorder"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order</a></li>
+      <br><li><a routerLink="/vendordashboard/vend_go_rec"><i class="fas fa-receipt"></i>&nbsp;&nbsp;&nbsp;&nbsp;Goods Receipt</a></li>
+      <br><li><a routerLink="/vendordashboard/vend_inv"><i class="fas fa-file-invoice"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invoice Data</a></li>
+      <br><li><a routerLink="/vendordashboard/vend_payage"><i class="fa fa-money"></i>&nbsp;&nbsp;&nbsp;&nbsp;Payments and Aging </a></li>
+      <br><li> <a routerLink="/vendordashboard/vend_credit"><i class="fa fa-credit-card"></i>&nbsp;&nbsp;&nbsp;Credit Data</a> </li>
+      <br><li><a routerLink="/vendordashboard/vend_debit"><i class="fa fa-credit-card-alt"></i>&nbsp;&nbsp;&nbsp;Debit Data</a></li>
+      <br><li> <a (click)="logout()"><i class="fa fa-sign-out"></i>&nbsp;&nbsp;&nbsp;&nbsp;Logout</a></li>
+      
+      <br>    <br>
+
+      <br>
+      <!-- <br><li> <a routerLink="/home"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;&nbsp;Back to Home Page</a></li> -->
+      </ul> 
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script type="text/javascript">
+        $(document).on('click','ul li', function(){
+          $(this).addClass('active').siblings.removeClass('active')
+        }) 
+      </script>
+  </div>

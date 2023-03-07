@@ -1,0 +1,15 @@
+main {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    height: 100vh;
+    width: 100%;
+    right:10rem;
+    /* background: url(https://image.shutterstock.com/image-photo/vendor-concept-wooden-letters-on-260nw-709623133.jpg) no-repeat center center; */
+    background: url(https://st.depositphotos.com/1004370/4205/i/600/depositphotos_42057951-stock-photo-keyboard-with-key-for-vendors.jpg) no-repeat center center;
+    /* background: url(https://www.vendorascmsoftware.com/wp-content/uploads/2019/08/Vendor-Management-System.jpg) no-repeat center center; */
+
+    /* background: url(https://www.angleritech.com/wp-content/uploads/2013/04/vendor-portal.png) no-repeat center center; */
+ /* background: url(https://us.123rf.com/450wm/stockbakery/stockbakery1710/stockbakery171002028/87835713-vendor-management-man-working-on-holographic-interface-visual-screen.jpg?ver=6) no-repeat center center; */
+ background-size: cover;
+}

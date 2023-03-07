@@ -1,0 +1,58 @@
+<div class="w3-container w3-black">
+  <h1>
+     GOODS RECEIPT DATA
+  </h1>
+  </div>
+  <mat-form-field appearance="standard">
+      <mat-label>Search through the Goods Receipt table fields</mat-label>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Enter any field" #input>
+    </mat-form-field>
+    
+    <div class="mat-elevation-z8">
+      <table mat-table [dataSource]="dataSource" matSort>
+    
+        <!-- ID Column -->
+        <ng-container matColumnDef="CreatedBy">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> CreatedBy </th>
+          <td mat-cell *matCellDef="let row"> {{row.CreatedBy}} </td>
+        </ng-container>
+    
+        <!-- Progress Column -->
+        <ng-container matColumnDef="Doc_Number">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Doc_Number </th>
+          <td mat-cell *matCellDef="let row"> {{row.Doc_Number}} </td>
+        </ng-container>
+    
+        <!-- Name Column -->
+        <ng-container matColumnDef="Doc_Date">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Doc_Date </th>
+          <td mat-cell *matCellDef="let row"> {{row.Doc_Date}} </td>
+        </ng-container>
+    
+        <!-- Fruit Column -->
+        <ng-container matColumnDef="Posting_Date">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Posting_Date </th>
+          <td mat-cell *matCellDef="let row"> {{row.Posting_Date}} </td>
+        </ng-container>
+  
+        <ng-container matColumnDef="Entry_Date">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Entry_Date </th>
+          <td mat-cell *matCellDef="let row"> {{row.Entry_Date}} </td>
+        </ng-container>
+  
+        <ng-container matColumnDef="Entry_Time">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Entry_Time </th>
+          <td mat-cell *matCellDef="let row"> {{row.Entry_Time}} </td>
+        </ng-container>
+    
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    
+        <!-- Row shown when there is no matching data. -->
+        <tr class="mat-row" *matNoDataRow>
+          <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+        </tr>
+      </table>
+    
+      <mat-paginator [pageSizeOptions]="[5, 10]" aria-label="Select page of users"></mat-paginator>
+    </div>

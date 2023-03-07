@@ -1,0 +1,23 @@
+table {
+    width: 100% !important ;
+  }
+  
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+    color: white;
+  }
+.mat-form-field mat-label{
+  color: white;
+
+}
+  td, th {
+    width: 25%;
+  }
+  h1{
+    text-align: center;
+    color: rgb(216, 86, 86);
+    margin-top: 10px;
+    font-family: Algerian;
+  }

@@ -1,0 +1,10 @@
+main {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    height: 100vh;
+    width: 100%;
+    right: 10rem;
+    background: url(https://wallpaperaccess.com/full/4321984.jpg) no-repeat center center;
+    background-size: cover;
+}
